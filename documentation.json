@@ -58,7 +58,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "https://hngxbt2.gjengineer.com.ng"
+							"value": "hngxbt2.gjengineer.com.ng"
 						},
 						{
 							"key": "Date",
@@ -123,7 +123,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "127.0.0.1:8000"
+							"value": "hngxbt2.gjengineer.com.ng"
 						},
 						{
 							"key": "Date",
@@ -195,7 +195,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "127.0.0.1:8000"
+							"value": "hngxbt2.gjengineer.com.ng"
 						},
 						{
 							"key": "Date",
@@ -251,7 +251,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "127.0.0.1:8000"
+							"value": "hngxbt2.gjengineer.com.ng"
 						},
 						{
 							"key": "Date",
@@ -329,7 +329,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "127.0.0.1:8000"
+							"value": "hngxbt2.gjengineer.com.ng"
 						},
 						{
 							"key": "Date",
@@ -392,7 +392,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "127.0.0.1:8000"
+							"value": "hngxbt2.gjengineer.com.ng"
 						},
 						{
 							"key": "Date",
@@ -492,7 +492,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "127.0.0.1:8000"
+							"value": "hngxbt2.gjengineer.com.ng"
 						},
 						{
 							"key": "Date",
@@ -564,7 +564,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "127.0.0.1:8000"
+							"value": "hngxbt2.gjengineer.com.ng"
 						},
 						{
 							"key": "Date",
@@ -646,7 +646,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "127.0.0.1:8000"
+							"value": "hngxbt2.gjengineer.com.ng"
 						},
 						{
 							"key": "Date",
@@ -709,7 +709,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "127.0.0.1:8000"
+							"value": "hngxbt2.gjengineer.com.ng"
 						},
 						{
 							"key": "Date",
@@ -757,7 +757,7 @@
 	"variable": [
 		{
 			"key": "hosting_url",
-			"value": "http://127.0.0.1:8000/"
+			"value": "https://hngxbt2.gjengineer.com.ng/"
 		}
 	]
 }

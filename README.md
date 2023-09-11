@@ -135,7 +135,7 @@ Ensure you update the collection variable called hosting_url to a url pointing t
 - TRUE CASE RESPONSE: 
 - {
     - "status": 200,
-    - "message": "1 Records Found",
+    - "message": "1 Record Found",
     - "person": {
         - "id": 7,
         - "name": "Justice George",
