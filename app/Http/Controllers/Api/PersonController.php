@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Person;
+use Illuminate\Auth\Events\Validated;
+use Illuminate\Support\Facades\Validator;
 
 class PersonController extends Controller
 {
@@ -30,6 +32,39 @@ class PersonController extends Controller
         ];
         
         return response()->json($data, 200);
+    }
+
+    public function store(Request $request)  {
+
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|max:200',
+            'gender' => 'required|string|max:6',
+            'age' => 'required|string|max:4'
+        ]);
+
+        if($validator->fails()){
+            return response()->json([
+                'status' => 422,
+                'message' => $validator->messages()
+            ], 422);
+        }
+
+        $person = Person::create([
+            'name' => $request->name,
+            'gender' => $request->gender,
+            'age' => $request->age
+        ]);
+
+        if($person){
+            return response()->json([
+                'status' => 200,
+                'message' => 'Person Created Successfully'
+            ], 200);
+        }
+        return response()->json([
+            'status' => 500,
+            'message' => 'Something went wrong'
+        ], 500);
     }
 
 }
