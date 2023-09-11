@@ -39,7 +39,7 @@ class PersonController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:200',
             'gender' => 'required|string|max:6',
-            'age' => 'required|string|max:4'
+            'age' => 'required|string|max:1000'
         ]);
 
         if($validator->fails()){
@@ -65,6 +65,42 @@ class PersonController extends Controller
             'status' => 500,
             'message' => 'Something went wrong'
         ], 500);
+    }
+
+    public function show($id){
+
+        $val = ['id' => $id];
+        $validator = Validator::make($val, [
+            'id' => 'required|int|max:1000000'
+        ]);
+
+        if($validator->fails()){
+            return response()->json([
+                'status' => 422,
+                'message' => $validator->messages()
+            ], 422);
+        }
+
+        $person = Person::find($id);
+
+        $personData = [];
+        $statusData = 404;
+        $message = "No Records Found with the id of ".$id;
+
+        if($person){
+            $personData = $person;
+            $statusData = 200;
+            $message = $person->count()." Records Found";
+        }
+
+        $data = [
+            'status' => $statusData,
+            'message' => $message,
+            'person' => $personData
+        ];
+        
+        return response()->json($data, 200);
+
     }
 
 }
