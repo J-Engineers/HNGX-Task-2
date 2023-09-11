@@ -24,4 +24,5 @@ Route::get("/", [PersonController::class, 'index']);
 Route::get("/{id}", [PersonController::class, 'show']);
 Route::post("/", [PersonController::class, 'store']);
 Route::put("/{id}", [PersonController::class, 'update']);
+Route::delete("/{id}", [PersonController::class, 'destroy']);
 

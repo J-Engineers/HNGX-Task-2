@@ -135,4 +135,33 @@ class PersonController extends Controller
             'message' => 'No such Person Found'
         ], 404);
     }
+
+    public function destroy($id){
+
+        $val = ['id' => $id];
+        $validator = Validator::make($val, [
+            'id' => 'required|int|max:1000000'
+        ]);
+
+        if($validator->fails()){
+            return response()->json([
+                'status' => 422,
+                'message' => $validator->messages()
+            ], 422);
+        }
+        
+        $person = Person::find($id);
+        if($person){
+            $person->delete();
+            return response()->json([
+                'status' => 200,
+                'message' => 'Person Deleted Successfully'
+            ], 200);
+        }
+
+        return response()->json([
+            'status' => 404,
+            'message' => 'No such Person Found'
+        ], 404);
+    }
 }
