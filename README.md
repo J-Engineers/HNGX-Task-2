@@ -10,9 +10,11 @@
 ## About This Task
 
 This is a project(API) designed to securely CREATE a Person, READ a Person or Persons, UPDATE a Person and DELETE a Person from a database table. It was built with php and LARAVEL was used as framework. Here are the things we are going to do to be able to install and tat out this:
+
 ## Hosted API https://hngxbt2.gjengineer.com.ng
 ## Hosted Documentation https://www.postman.com/red-meadow-5256/workspace/red-meadow-5256-s-public-workspace/collection/10053626-c5e41565-7ce0-4cb5-b784-76e729f8bdd1
 ## Testing Script is in  documentation.json
+
 
 - [You need to install Composer on your system. This is the PHP package manager](https://composer.com).
 - [You need to install a local server like mampp or xampp or wampp](https://apache.org).
@@ -33,7 +35,7 @@ Lets Look at the endpoints. We have got 5 endpoints here
 ## Hosted API https://hngxbt2.gjengineer.com.ng
 ## Hosted Documentation https://www.postman.com/red-meadow-5256/workspace/red-meadow-5256-s-public-workspace/collection/10053626-c5e41565-7ce0-4cb5-b784-76e729f8bdd1
 ## Testing Script is in  documentation.json
-Make sure you change the hosting_url to the url pointing to the server that hosted this project
+Make sure you update the collection variable called hosting_url to a url pointing to the server that you hosted this project on. if on localhost, then http://127.0.0.1:8000
 
 ## 1. READ all persons
 
