@@ -10,6 +10,9 @@
 ## About This Task
 
 This is a project(API) designed to securely CREATE a Person, READ a Person or Persons, UPDATE a Person and DELETE a Person from a database table. It was built with php and LARAVEL was used as framework. Here are the things we are going to do to be able to install and tat out this:
+## Hosted API https://hngxbt2.gjengineer.com.ng
+## Hosted Documentation https://www.postman.com/red-meadow-5256/workspace/red-meadow-5256-s-public-workspace/collection/10053626-c5e41565-7ce0-4cb5-b784-76e729f8bdd1
+## Testing Script is in  documentation.json
 
 - [You need to install Composer on your system. This is the PHP package manager](https://composer.com).
 - [You need to install a local server like mampp or xampp or wampp](https://apache.org).
@@ -35,7 +38,7 @@ Make sure you change the hosting_url to the url pointing to the server that host
 ## 1. READ all persons
 
 METHOD: GET
-URL: http://127.0.0.1:8000/api
+URL: https://hngxbt2.gjengineer.com.ng/api
 BODY: none
 PARAMETERS: none
 
@@ -82,7 +85,7 @@ FALSE CASE RESPONSE:
 ## 2. CREATE a person
 
 METHOD: POST
-URL: http://127.0.0.1:8000/api
+URL: https://hngxbt2.gjengineer.com.ng/api
 BODY: raw(JSON)
 {
     "name": "Justice George",
@@ -120,7 +123,7 @@ FALSE CASE RESPONSE:
 ## 3. READ a person
 
 METHOD: GET
-URL: http://127.0.0.1:8000/api?id=1
+URL: https://hngxbt2.gjengineer.com.ng/api?id=1
 BODY: none
 PARAMETERS: key and value
 key = id,
@@ -153,7 +156,7 @@ FALSE CASE RESPONSE:
 ## 4. UPDATE a person
 
 METHOD: PUT
-URL: http://127.0.0.1:8000/api
+URL: https://hngxbt2.gjengineer.com.ng/api
 BODY: raw(JSON)
 {
     "name": "James George",
@@ -190,7 +193,7 @@ FALSE CASE RESPONSE:
 ## 5. DELETE a person
 
 METHOD: DELETE
-URL: http://127.0.0.1:8000/api
+URL: https://hngxbt2.gjengineer.com.ng/api
 BODY: none
 PARAMETERS: key and value
 key = id,
