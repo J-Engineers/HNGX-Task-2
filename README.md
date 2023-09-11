@@ -35,185 +35,185 @@ Lets Look at the endpoints. We have got 5 endpoints here
 ## Hosted API https://hngxbt2.gjengineer.com.ng
 ## Hosted Documentation https://www.postman.com/red-meadow-5256/workspace/red-meadow-5256-s-public-workspace/collection/10053626-c5e41565-7ce0-4cb5-b784-76e729f8bdd1
 ## Testing Script is in  documentation.json
-Make sure you update the collection variable called hosting_url to a url pointing to the server that you hosted this project on. if on localhost, then http://127.0.0.1:8000
+Ensure you update the collection variable called hosting_url to a url pointing to the server that you hosted this project on. if on localhost, then http://127.0.0.1:8000
 
 ## 1. READ all persons
 
-METHOD: GET
-URL: https://hngxbt2.gjengineer.com.ng/api
-BODY: none
-PARAMETERS: none
+ - METHOD: GET
+ - URL: https://hngxbt2.gjengineer.com.ng/api
+ - BODY: none
+ - PARAMETERS: none
 
-TRUE CASE RESPONSE: 
-{
-    "status": 200,
-    "message": "3 Records Found",
-    "person": [
-        {
-            "id": 1,
-            "name": "Ugbogu Justice",
-            "gender": "Female",
-            "age": "12",
-            "created_at": "2023-09-11T06:04:45.000000Z",
-            "updated_at": "2023-09-11T06:36:55.000000Z"
-        },
-        {
-            "id": 2,
-            "name": "James Justice",
-            "gender": "Female",
-            "age": "12",
-            "created_at": "2023-09-11T06:33:00.000000Z",
-            "updated_at": "2023-09-11T06:33:00.000000Z"
-        },
-        {
-            "id": 3,
-            "name": "James Justice",
-            "gender": "Female",
-            "age": "12",
-            "created_at": "2023-09-11T06:33:45.000000Z",
-            "updated_at": "2023-09-11T06:33:45.000000Z"
-        },
-    ]
-}
+ - TRUE CASE RESPONSE: 
+ - {
+    - "status": 200,
+    - "message": "3 Records Found",
+    - "person": [
+        - {
+           -  "id": 1,
+            - "name": "Ugbogu Justice",
+            - "gender": "Female",
+            - "age": "12",
+            - "created_at": "2023-09-11T06:04:45.000000Z",
+            - "updated_at": "2023-09-11T06:36:55.000000Z"
+        - },
+        - {
+            - "id": 2,
+            - "name": "James Justice",
+            - "gender": "Female",
+            - "age": "12",
+            - "created_at": "2023-09-11T06:33:00.000000Z",
+            - "updated_at": "2023-09-11T06:33:00.000000Z"
+        - },
+        - {
+            - "id": 3,
+            - "name": "James Justice",
+            - "gender": "Female",
+            - "age": "12",
+            - "created_at": "2023-09-11T06:33:45.000000Z",
+            - "updated_at": "2023-09-11T06:33:45.000000Z"
+        - },
+    - ]
+- }
 
-FALSE CASE RESPONSE: 
+- FALSE CASE RESPONSE: 
 
-{
-    "status": 404,
-    "message": "No Records Found",
-    "person": []
-}
+- {
+    - "status": 404,
+    - "message": "No Records Found",
+    - "person": []
+- }
 
 ## 2. CREATE a person
 
-METHOD: POST
-URL: https://hngxbt2.gjengineer.com.ng/api
-BODY: raw(JSON)
-{
-    "name": "Justice George",
-    "gender": "Male",
-    "age": "12"
-}
-PARAMETERS: none
+- METHOD: POST
+- URL: https://hngxbt2.gjengineer.com.ng/api
+- BODY: raw(JSON)
+- {
+    - "name": "Justice George",
+    - "gender": "Male",
+    - "age": "12"
+- }
+- PARAMETERS: none
 
-TRUE CASE RESPONSE: 
-{
-    {
-        "status": 200,
-        "message": "Person Created Successfully"
-    }
-}
+- TRUE CASE RESPONSE: 
+- {
+    - {
+        - "status": 200,
+        - "message": "Person Created Successfully"
+    - }
+- }
 
-FALSE CASE RESPONSE: 
+- FALSE CASE RESPONSE: 
 
-{
-    "status": 422,
-    "message": {
-        "name": [
-            "The name field is required."
-        ],
-        "gender": [
-            "The gender field is required."
-        ],
-        "age": [
-            "The age field is required."
-        ]
-    }
-}
+- {
+    - "status": 422,
+    - "message": {
+        - "name": [
+            - "The name field is required."
+        - ],
+        - "gender": [
+            - "The gender field is required."
+        - ],
+        - "age": [
+           -  "The age field is required."
+        - ]
+    - }
+- }
 
 
 ## 3. READ a person
 
-METHOD: GET
-URL: https://hngxbt2.gjengineer.com.ng/api?id=1
-BODY: none
-PARAMETERS: key and value
-key = id,
-value = 1
+- METHOD: GET
+- URL: https://hngxbt2.gjengineer.com.ng/api?id=1
+- BODY: none
+- PARAMETERS: key and value
+- key = id,
+- value = 1
 
 
-TRUE CASE RESPONSE: 
-{
-    "status": 200,
-    "message": "1 Records Found",
-    "person": {
-        "id": 7,
-        "name": "Justice George",
-        "gender": "Male",
-        "age": "12",
-        "created_at": "2023-09-11T07:24:10.000000Z",
-        "updated_at": "2023-09-11T07:24:10.000000Z"
-    }
-}
+- TRUE CASE RESPONSE: 
+- {
+    - "status": 200,
+    - "message": "1 Records Found",
+    - "person": {
+        - "id": 7,
+        - "name": "Justice George",
+        - "gender": "Male",
+        - "age": "12",
+        - "created_at": "2023-09-11T07:24:10.000000Z",
+        - "updated_at": "2023-09-11T07:24:10.000000Z"
+    - }
+- }
 
-FALSE CASE RESPONSE: 
+- FALSE CASE RESPONSE: 
 
-{
-    "status": 404,
-    "message": "No Records Found with the id of 3",
-    "person": []
-}
+- {
+    - "status": 404,
+    - "message": "No Records Found with the id of 3",
+    - "person": []
+- }
 
 
 ## 4. UPDATE a person
 
-METHOD: PUT
-URL: https://hngxbt2.gjengineer.com.ng/api
-BODY: raw(JSON)
-{
-    "name": "James George",
-    "gender": "Female",
-    "age": "13"
-}
-PARAMETERS: key and value
-key = id,
-value = 1
+- METHOD: PUT
+- URL: https://hngxbt2.gjengineer.com.ng/api
+- BODY: raw(JSON)
+- {
+    - "name": "James George",
+    - "gender": "Female",
+    - "age": "13"
+- }
+- PARAMETERS: key and value
+- key = id,
+- value = 1
 
 
-TRUE CASE RESPONSE: 
-{
-    "status": 200,
-    "message": "Person Updated Successfully",
-    "person": {
-        "id": 7,
-        "name": "Ugbogu Justice",
-        "gender": "Female",
-        "age": "21",
-        "created_at": "2023-09-11T07:24:10.000000Z",
-        "updated_at": "2023-09-11T07:30:13.000000Z"
-    }
-}
+- TRUE CASE RESPONSE: 
+- {
+    - "status": 200,
+    - "message": "Person Updated Successfully",
+    - "person": {
+        - "id": 7,
+        - "name": "Ugbogu Justice",
+        - "gender": "Female",
+        - "age": "21",
+        - "created_at": "2023-09-11T07:24:10.000000Z",
+        - "updated_at": "2023-09-11T07:30:13.000000Z"
+    - }
+- }
 
-FALSE CASE RESPONSE: 
+- FALSE CASE RESPONSE: 
 
-{
-    "status": 404,
-    "message": "No such Person Found"
-}
+- {
+    - "status": 404,
+    - "message": "No such Person Found"
+- }
 
 
 ## 5. DELETE a person
 
-METHOD: DELETE
-URL: https://hngxbt2.gjengineer.com.ng/api
-BODY: none
-PARAMETERS: key and value
-key = id,
-value = 1
+- METHOD: DELETE
+- URL: https://hngxbt2.gjengineer.com.ng/api
+- BODY: none
+- PARAMETERS: key and value
+- key = id,
+- value = 1
 
 
-TRUE CASE RESPONSE: 
-{
-    "status": 200,
-    "message": "Person Deleted Successfully"
-}
+- TRUE CASE RESPONSE: 
+- {
+    - "status": 200,
+    - "message": "Person Deleted Successfully"
+- }
 
-FALSE CASE RESPONSE: 
+- FALSE CASE RESPONSE: 
 
-{
-    "status": 404,
-    "message": "No such Person Found"
-}
+- {
+    - "status": 404,
+    - "message": "No such Person Found"
+- }
 
 There you go with the details of testing out this project
 - Open up the postman you downloaded and signup/login
