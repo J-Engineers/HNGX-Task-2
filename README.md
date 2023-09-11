@@ -27,7 +27,7 @@ Lets Look at the endpoints. We have got 5 endpoints here
 
 ## Endpoints(CRUD Operation)
 
-
+## Hosted API https://hngxbt2.gjengineer.com.ng
 ## Hosted Documentation https://www.postman.com/red-meadow-5256/workspace/red-meadow-5256-s-public-workspace/collection/10053626-c5e41565-7ce0-4cb5-b784-76e729f8bdd1
 ## Testing Script is in  documentation.json
 Make sure you change the hosting_url to the url pointing to the server that hosted this project
