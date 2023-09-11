@@ -103,4 +103,36 @@ class PersonController extends Controller
 
     }
 
+    public function update(Request $request, int $id){
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|max:200',
+            'gender' => 'required|string|max:6',
+            'age' => 'required|string|max:1000'
+        ]);
+
+        if($validator->fails()){
+            return response()->json([
+                'status' => 422,
+                'message' => $validator->messages()
+            ], 422);
+        }
+
+        $person = Person::find($id);
+        if($person){
+            $person->update([
+                'name' => $request->name,
+                'gender' => $request->gender,
+                'age' => $request->age
+            ]);
+            return response()->json([
+                'status' => 200,
+                'message' => 'Person Updated Successfully',
+                'person' => $person
+            ], 200);
+        }
+        return response()->json([
+            'status' => 404,
+            'message' => 'No such Person Found'
+        ], 404);
+    }
 }
