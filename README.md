@@ -9,7 +9,7 @@
 
 ## About This Task
 
-This is a project(API) designed to securely CREATE a Person, READ a Person or Persons, UPDATE a Person and DELETE a Person from a database table. It was built with php and LARAVEL was used as framework. Here are the things we are going to do to be able to install and tat out this:
+This is a project(API) designed to securely CREATE a Person, READ a Person or Persons, UPDATE a Person and DELETE a Person from a database table. It was built with php and LARAVEL was used as framework. Here are the things we are going to do to be able to install and use this:
 
 ## Hosted API https://hngxbt2.gjengineer.com.ng
 ## Hosted Documentation https://www.postman.com/red-meadow-5256/workspace/red-meadow-5256-s-public-workspace/collection/10053626-c5e41565-7ce0-4cb5-b784-76e729f8bdd1
@@ -19,15 +19,15 @@ This is a project(API) designed to securely CREATE a Person, READ a Person or Pe
 
 - [You need to install Composer on your system. This is the PHP package manager](https://composer.com).
 - [You need to install a local server like mampp or xampp or wampp](https://apache.org).
-- [You need to install a code edito like VSCode or PHPStorm or Sublime](https://vscode.com).
+- [You need to install a code editor like VSCode or PHPStorm or Sublime](https://vscode.com).
 - Turn on your local server and start the apache and mysql services
 - Go into the local server public folder. Eg c:/xampp/htdocs and create an empty folder.
-- Open this folder in your code editor and open a terminal anf fork this project into the folder and install laravel.
+- Open this folder in your code editor and open a terminal and fork this project into the folder and install laravel.
 - You need to create .env file inside the root folder of this project and copy the content of .env.example and paste inside the .env file.
 - You need to goto the phpMyAdmin on the browser to create your database, copy the database credentials and go the .env file in the project and update the database name, user, host and password and save the file.
-- You need to migrate the tables into your new database "php artisan migrate"
-- You need to start the project "php artisan serve", then check for the url of your app, if error was found, then you have to carefully repeat that state above again.
-- You need to readmore to see the use cases and endpoints with their requirements and responses"
+- You need to migrate the tables into your new database, do so in your terminal "php artisan migrate"
+- You need to start the project, do so in your terminal "php artisan serve", then check for the url of your app, if errors was found, then you have to carefully repeat that steps above again.
+- You need to read more to see the use cases and endpoints with there requirements and responses"
 
 Lets Look at the endpoints. We have got 5 endpoints here
 
@@ -104,6 +104,14 @@ Feel free to import documentation.json file into postman to test if you do not w
     - {
         - "status": 200,
         - "message": "Person Created Successfully"
+        - "person": {
+            - "name": "Debby Frank Pauls",
+            - "gender": "Female",
+            - "age": "42",
+            - "updated_at": "2023-09-12T10:27:59.000000Z",
+            - "created_at": "2023-09-12T10:27:59.000000Z",
+            - "id": 12
+        - }
     - }
 - }
 
