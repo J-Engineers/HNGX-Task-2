@@ -138,9 +138,7 @@ Feel free to import documentation.json file into postman to test if you do not w
 - METHOD: GET
 - URL: https://hngxbt2.gjengineer.com.ng/api/1
 - BODY: none
-- PARAMETERS: key and value
-- key = id,
-- value = 1
+- PARAMETERS: none
 
 
 - TRUE CASE RESPONSE: 
@@ -169,16 +167,14 @@ Feel free to import documentation.json file into postman to test if you do not w
 ## 4. UPDATE a person
 
 - METHOD: PUT
-- URL: https://hngxbt2.gjengineer.com.ng/api
+- URL: https://hngxbt2.gjengineer.com.ng/api/1
 - BODY: raw(JSON)
 - {
     - "name": "James George",
     - "gender": "Female",
     - "age": "13"
 - }
-- PARAMETERS: key and value
-- key = id,
-- value = 1
+- PARAMETERS: none
 
 
 - TRUE CASE RESPONSE: 
@@ -206,11 +202,9 @@ Feel free to import documentation.json file into postman to test if you do not w
 ## 5. DELETE a person
 
 - METHOD: DELETE
-- URL: https://hngxbt2.gjengineer.com.ng/api
+- URL: https://hngxbt2.gjengineer.com.ng/api/1
 - BODY: none
-- PARAMETERS: key and value
-- key = id,
-- value = 1
+- PARAMETERS: none
 
 
 - TRUE CASE RESPONSE: 
