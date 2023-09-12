@@ -105,9 +105,9 @@ Feel free to import documentation.json file into postman to test if you do not w
         - "status": 200,
         - "message": "Person Created Successfully"
         - "person": {
-            - "name": "Debby Frank Pauls",
-            - "gender": "Female",
-            - "age": "42",
+            - "name": "Justice George",
+            - "gender": "Male",
+            - "age": "12",
             - "updated_at": "2023-09-12T10:27:59.000000Z",
             - "created_at": "2023-09-12T10:27:59.000000Z",
             - "id": 12
