@@ -136,7 +136,7 @@ Feel free to import documentation.json file into postman to test if you do not w
 ## 3. READ a person
 
 - METHOD: GET
-- URL: https://hngxbt2.gjengineer.com.ng/api?id=1
+- URL: https://hngxbt2.gjengineer.com.ng/api/1
 - BODY: none
 - PARAMETERS: key and value
 - key = id,
@@ -148,7 +148,7 @@ Feel free to import documentation.json file into postman to test if you do not w
     - "status": 200,
     - "message": "1 Record Found",
     - "person": {
-        - "id": 7,
+        - "id": 1,
         - "name": "Justice George",
         - "gender": "Male",
         - "age": "12",
@@ -186,7 +186,7 @@ Feel free to import documentation.json file into postman to test if you do not w
     - "status": 200,
     - "message": "Person Updated Successfully",
     - "person": {
-        - "id": 7,
+        - "id": 1,
         - "name": "James George",
         - "gender": "Female",
         - "age": "13",
