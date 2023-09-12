@@ -67,7 +67,7 @@ Ensure you update the collection variable called hosting_url to a url pointing t
         - },
         - {
             - "id": 3,
-            - "name": "James Justice",
+            - "name": "Peter Justice",
             - "gender": "Female",
             - "age": "12",
             - "created_at": "2023-09-11T06:33:45.000000Z",
@@ -176,9 +176,9 @@ Ensure you update the collection variable called hosting_url to a url pointing t
     - "message": "Person Updated Successfully",
     - "person": {
         - "id": 7,
-        - "name": "Ugbogu Justice",
+        - "name": "James George",
         - "gender": "Female",
-        - "age": "21",
+        - "age": "13",
         - "created_at": "2023-09-11T07:24:10.000000Z",
         - "updated_at": "2023-09-11T07:30:13.000000Z"
     - }

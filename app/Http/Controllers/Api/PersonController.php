@@ -22,7 +22,7 @@ class PersonController extends Controller
         if($person->count() > 0){
             $personData = $person;
             $statusData = 200;
-            $message = $person->count()." Records Found";
+            $message = $person->count()." Record(s) Found";
         }
 
         $data = [
@@ -90,7 +90,7 @@ class PersonController extends Controller
         if($person){
             $personData = $person;
             $statusData = 200;
-            $message = $person->count()." Records Found";
+            $message = "A Record Found";
         }
 
         $data = [
