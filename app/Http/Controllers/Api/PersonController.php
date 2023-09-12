@@ -37,7 +37,7 @@ class PersonController extends Controller
     public function store(Request $request)  {
 
         $validator = Validator::make($request->all(), [
-            'name' => 'required|string|max:200',
+            'name' => 'required|string|max:200|unique:persons,name',
             'gender' => 'required|string|max:6',
             'age' => 'required|string|max:1000'
         ]);
@@ -105,7 +105,7 @@ class PersonController extends Controller
 
     public function update(Request $request, int $id){
         $validator = Validator::make($request->all(), [
-            'name' => 'required|string|max:200',
+            'name' => 'required|string|max:200|unique:persons,name',
             'gender' => 'required|string|max:6',
             'age' => 'required|string|max:1000'
         ]);
