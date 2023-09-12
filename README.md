@@ -13,7 +13,8 @@ This is a project(API) designed to securely CREATE a Person, READ a Person or Pe
 
 ## Hosted API https://hngxbt2.gjengineer.com.ng
 ## Hosted Documentation https://www.postman.com/red-meadow-5256/workspace/red-meadow-5256-s-public-workspace/collection/10053626-c5e41565-7ce0-4cb5-b784-76e729f8bdd1
-## Testing Script is in  documentation.json
+## Testing Script is in  documentation.json at the root directory
+## UML Design is in CRUD_OPERATION_UML.pdf at the root directory
 
 
 - [You need to install Composer on your system. This is the PHP package manager](https://composer.com).
@@ -34,8 +35,10 @@ Lets Look at the endpoints. We have got 5 endpoints here
 
 ## Hosted API https://hngxbt2.gjengineer.com.ng
 ## Hosted Documentation https://www.postman.com/red-meadow-5256/workspace/red-meadow-5256-s-public-workspace/collection/10053626-c5e41565-7ce0-4cb5-b784-76e729f8bdd1
-## Testing Script is in  documentation.json
+## Testing Script is in  documentation.json at the root directory
+## UML Design is in CRUD_OPERATION_UML.pdf at the root directory
 Ensure you update the collection variable called hosting_url to a url pointing to the server that you hosted this project on. if on localhost, then http://127.0.0.1:8000
+Feel free to import documentation.json file into postman to test if you do not want want to use the hosted one.
 
 ## 1. READ all persons
 

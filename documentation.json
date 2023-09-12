@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "c5e41565-7ce0-4cb5-b784-76e729f8bdd1",
 		"name": "HNGX Task 2",
-		"description": "Welcome to the API. This is the HNGx Task 2 for backend requirement. This a CRUD API with Examples and Test. Lets get this Tested. You have got to update hosting_url variable to help point to absolute server of your choise.",
+		"description": "Welcome to the API Documentation of HNGx Backend Task 2 Project.\n\nThis is one of the HNGx Task 2 for backend requirements. This a CRUD API with Examples and Test script. Lets get this Tested.\n\nEnsure you update the collection variable called hosting_url to a url pointing to the server that you hosted this project on.\n\nif on localhost, then use http://127.0.0.1:8000, mine is hosted on this url https://hngxbt2.gjengineer.com.ng",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "10053626",
 		"_collection_link": "https://www.postman.com/red-meadow-5256/workspace/red-meadow-5256-s-public-workspace/collection/10053626-c5e41565-7ce0-4cb5-b784-76e729f8bdd1?action=share&source=collection_link&creator=10053626"
@@ -15,7 +15,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Debby Frank\",\r\n    \"gender\": \"Female\",\r\n    \"age\": \"42\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Debby Frank Paul\",\r\n    \"gender\": \"Female\",\r\n    \"age\": \"42\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -38,7 +38,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Justice George\",\r\n    \"gender\": \"Male\",\r\n    \"age\": \"12\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Justice George Grace\",\r\n    \"gender\": \"Male\",\r\n    \"age\": \"12\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -46,9 +46,16 @@
 							}
 						},
 						"url": {
-							"raw": "{{hosting_url}}api",
+							"raw": "https://hngxbt2.gjengineer.com.ng/api",
+							"protocol": "https",
 							"host": [
-								"{{hosting_url}}api"
+								"hngxbt2",
+								"gjengineer",
+								"com",
+								"ng"
+							],
+							"path": [
+								"api"
 							]
 						}
 					},
@@ -58,7 +65,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "hngxbt2.gjengineer.com.ng"
+							"value": "127.0.0.1:8000"
 						},
 						{
 							"key": "Date",
@@ -123,7 +130,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "hngxbt2.gjengineer.com.ng"
+							"value": "127.0.0.1:8000"
 						},
 						{
 							"key": "Date",
@@ -195,7 +202,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "hngxbt2.gjengineer.com.ng"
+							"value": "127.0.0.1:8000"
 						},
 						{
 							"key": "Date",
@@ -251,7 +258,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "hngxbt2.gjengineer.com.ng"
+							"value": "127.0.0.1:8000"
 						},
 						{
 							"key": "Date",
@@ -297,12 +304,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{hosting_url}}api/3",
+					"raw": "{{hosting_url}}api/8",
 					"host": [
 						"{{hosting_url}}api"
 					],
 					"path": [
-						"3"
+						"8"
 					]
 				},
 				"description": "Read A Person"
@@ -329,7 +336,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "hngxbt2.gjengineer.com.ng"
+							"value": "127.0.0.1:8000"
 						},
 						{
 							"key": "Date",
@@ -369,7 +376,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"status\": 200,\n    \"message\": \"2 Records Found\",\n    \"person\": {\n        \"id\": 1,\n        \"name\": \"Justice George\",\n        \"gender\": \"Male\",\n        \"age\": \"12\",\n        \"created_at\": \"2023-09-11T07:56:09.000000Z\",\n        \"updated_at\": \"2023-09-11T07:56:09.000000Z\"\n    }\n}"
+					"body": "{\n    \"status\": 200,\n    \"message\": \"A Record Found\",\n    \"person\": {\n        \"id\": 1,\n        \"name\": \"Justice George\",\n        \"gender\": \"Male\",\n        \"age\": \"12\",\n        \"created_at\": \"2023-09-11T07:56:09.000000Z\",\n        \"updated_at\": \"2023-09-11T07:56:09.000000Z\"\n    }\n}"
 				},
 				{
 					"name": "Read A Person - False Example",
@@ -392,7 +399,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "hngxbt2.gjengineer.com.ng"
+							"value": "127.0.0.1:8000"
 						},
 						{
 							"key": "Date",
@@ -469,7 +476,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Ugbogu Justice\",\r\n    \"gender\": \"Female\",\r\n    \"age\": \"21\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Ugbogu Justice George\",\r\n    \"gender\": \"Female\",\r\n    \"age\": \"21\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -492,7 +499,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "hngxbt2.gjengineer.com.ng"
+							"value": "127.0.0.1:8000"
 						},
 						{
 							"key": "Date",
@@ -564,7 +571,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "hngxbt2.gjengineer.com.ng"
+							"value": "127.0.0.1:8000"
 						},
 						{
 							"key": "Date",
@@ -646,7 +653,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "hngxbt2.gjengineer.com.ng"
+							"value": "127.0.0.1:8000"
 						},
 						{
 							"key": "Date",
@@ -709,7 +716,7 @@
 					"header": [
 						{
 							"key": "Host",
-							"value": "hngxbt2.gjengineer.com.ng"
+							"value": "127.0.0.1:8000"
 						},
 						{
 							"key": "Date",
@@ -752,6 +759,26 @@
 					"body": "{\n    \"status\": 404,\n    \"message\": \"No such Person Found\"\n}"
 				}
 			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		}
 	],
 	"variable": [
